@@ -1,0 +1,23 @@
+import 'package:alchemist/alchemist.dart';
+import '{{{uikit_import}}}';
+
+import '../../../../test_utils/golden_tests_utils.dart';
+
+void main() {
+  widgetScreenshotTest(
+    '{{{name.pascalCase()}}}',
+    widgetBuilder: (context) => GoldenTestGroup(
+      columns: 1,
+      children: [
+        GoldenTestScenario(
+          name: 'normal',
+          child: const TestWidgetContainer(
+            child: {{{name.pascalCase()}}}(
+              
+            ),
+          ),
+        ),
+      ],
+    ),
+  );
+}

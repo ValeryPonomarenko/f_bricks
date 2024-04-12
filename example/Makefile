@@ -13,6 +13,9 @@ init_base:
 new_repository:
 	@pushd tools/templates; mason get; mason make repository --root_folder_path $(shell pwd); popd
 
+new_ui:
+	mason get; mason make uikit --root_folder_path $(shell pwd);
+
 # # Moves and/or renames repository class using mason templates
 # move_repository:
 # 	@pushd tools/templates; mason get; mason make move_repository --root_folder_path $(shell pwd); popd

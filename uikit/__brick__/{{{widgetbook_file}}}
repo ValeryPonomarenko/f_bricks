@@ -1,0 +1,13 @@
+import '{{{uikit_import}}}';
+import 'package:flutter/material.dart';
+import 'package:widgetbook/widgetbook.dart';
+
+class {{{name.pascalCase()}}}Component extends WidgetbookUseCase {
+  {{{name.pascalCase()}}}Component()
+      : super(
+          name: "{{{name.pascalCase()}}}",
+          builder: (context) => {{{name.pascalCase()}}}(
+            
+          ),
+        );
+}
