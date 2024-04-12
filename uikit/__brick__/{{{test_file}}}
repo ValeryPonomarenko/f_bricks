@@ -5,7 +5,7 @@ import '../../../../test_utils/golden_tests_utils.dart';
 
 void main() {
   widgetScreenshotTest(
-    '{{{name.pascalCase()}}}',
+    ({{{name.pascalCase()}}}).toString(),
     widgetBuilder: (context) => GoldenTestGroup(
       columns: 1,
       children: [

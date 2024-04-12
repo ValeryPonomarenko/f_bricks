@@ -5,7 +5,7 @@ import 'package:widgetbook/widgetbook.dart';
 class {{{name.pascalCase()}}}Component extends WidgetbookUseCase {
   {{{name.pascalCase()}}}Component()
       : super(
-          name: "{{{name.pascalCase()}}}",
+          name: ({{{name.pascalCase()}}}).toString(),
           builder: (context) => {{{name.pascalCase()}}}(
             
           ),
