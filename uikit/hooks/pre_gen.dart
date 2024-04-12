@@ -15,9 +15,9 @@ void run(HookContext context) {
     throw "Cannot use empty type for component";
   }
 
-  final type = componentType == "complete"
+  final type = componentType == "completes"
       ? "C"
-      : componentType == "template"
+      : componentType == "templates"
           ? "T"
           : "P";
   final name = "Kit$type${subname.pascalCase}$componentName";
