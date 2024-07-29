@@ -26,11 +26,11 @@ vars:
     description: root folder path to project where main pubspec.yaml is located
     prompt: "ABSOLUTE path to project's root directory: "
 
-  subname:
+  feature_name:
     type: string
-    description: Subname of ui component?
-    default: Default
-    prompt: subname of ui component - rating, text, etc.
+    description: Feature name?
+    default: Common
+    prompt: feature name of ui component - calendar, button, etc.
 
   name:
     type: string

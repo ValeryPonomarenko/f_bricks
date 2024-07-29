@@ -6,7 +6,7 @@ void run(HookContext context) {
 
   var componentName = (context.vars["name"] as String? ?? "").trim().pascalCase;
   var componentType = (context.vars["type"] as String? ?? "").trim().lowerCase;
-  var subname = (context.vars["subname"] as String? ?? "").trim().lowerCase;
+  var featureName = (context.vars["feature_name"] as String? ?? "").trim().lowerCase;
 
   if (componentName.isEmpty) {
     throw "Cannot use empty name for component";
@@ -20,15 +20,15 @@ void run(HookContext context) {
       : componentType == "templates"
           ? "T"
           : "P";
-  final name = "Kit$type${subname.pascalCase}$componentName";
+  final name = "Kit$type${featureName.pascalCase}$componentName";
 
   final relativeRoot = relativeRootDir(rootDir);
 
   context.vars = {
     "name": name,
-    "uikit_file": "$relativeRoot/lib/uikit/beauty/$componentType/$subname/${name.snakeCase}.dart",
-    "uikit_import": "package:beautyverse/uikit/beauty/$componentType/$subname/${name.snakeCase}.dart",
-    "test_file": "$relativeRoot/test/widgets/beauty/$componentType/$subname/${name.snakeCase}_test.dart",
-    "widgetbook_file": "$relativeRoot/lib/widgetbook/$componentType/$subname/${name.snakeCase}_component.dart",
+    "uikit_file": "$relativeRoot/lib/uikit/beauty/$componentType/$featureName/${name.snakeCase}.dart",
+    "uikit_import": "package:beautyverse/uikit/beauty/$componentType/$featureName/${name.snakeCase}.dart",
+    "test_file": "$relativeRoot/test/widgets/beauty/$componentType/$featureName/${name.snakeCase}_test.dart",
+    "widgetbook_file": "$relativeRoot/lib/widgetbook/$componentType/$featureName/${name.snakeCase}_component.dart",
   };
 }

@@ -12,7 +12,9 @@ class {{navigator_name}} with NoRoutes {
 }
 
 mixin {{route_name}} {
-  Future<void> open{{stem}}({{initial_params_name}} initialParams) async {
+  Future<void> open{{stem}}([
+    {{initial_params_name}} initialParams = const {{initial_params_name}}(),
+  ]) async {
     return appNavigator.push(
       materialRoute({{page_name}}(initialParams: initialParams)),
     );
