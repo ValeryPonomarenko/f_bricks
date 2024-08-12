@@ -184,7 +184,6 @@ Future<void> _replaceInAppComponent({
         text: """
 ${templateImport("$appPackage/$importPath/$initialParamsFileName")}
 ${templateImport("$appPackage/$importPath/$navigatorFileName")}
-${templateImport("$appPackage/$importPath/$pageFileName")}
 ${templateImport("$appPackage/$importPath/$presentationModelFileName")}
 ${templateImport("$appPackage/$importPath/$presenterFileName")}
       """,

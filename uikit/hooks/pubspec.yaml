@@ -1,9 +1,12 @@
 name: uikit_hooks
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: ">=3.4.1 <4.0.0"
 
 dependencies:
   template_utils:
     path: ../../template_utils
   mason: ">=0.1.0-dev.41 <0.1.0"
+
+override_dependencies:
+  archive: 3.6.1
