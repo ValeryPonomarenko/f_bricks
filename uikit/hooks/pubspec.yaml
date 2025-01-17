@@ -6,7 +6,7 @@ environment:
 dependencies:
   template_utils:
     path: ../../template_utils
-  mason: ">=0.1.0-dev.41 <0.1.0"
+  mason: ">=0.1.0-dev.41 <=0.1.0"
 
 override_dependencies:
   archive: 3.6.1
