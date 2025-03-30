@@ -4,6 +4,6 @@ environment:
   sdk: ">=3.7.0 <4.0.0"
 
 dependencies:
-  mason: ">=0.1.0-dev.41 <=0.1.0"
+  mason: ">=0.1.0-dev.41 <=0.1.1"
   template_utils:
     path: ../../template_utils
