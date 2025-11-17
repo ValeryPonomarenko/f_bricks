@@ -17,7 +17,7 @@ void run(HookContext context) {
 
   final type = componentType == "complete"
       ? ""
-      : "Base"
+      : "Base";
       
   final name = "Kit${groupName.pascalCase}$componentName$Type";
 
