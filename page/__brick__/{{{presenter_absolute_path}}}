@@ -1,9 +1,9 @@
-import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:{{{app_package}}}/core/utils/mvp_extensions.dart';
 import 'package:{{{app_package}}}/{{{import_path}}}/{{{navigator_file_name}}}';
 import 'package:{{{app_package}}}/{{{import_path}}}/{{{presentation_model_file_name}}}';
 
 
-class {{presenter_name}} extends Cubit<{{view_model_name}}> {
+class {{presenter_name}} extends AppCubit<{{view_model_name}}> {
 
   {{presenter_name}}(
     super.model,

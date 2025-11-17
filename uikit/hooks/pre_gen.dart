@@ -25,8 +25,8 @@ void run(HookContext context) {
 
   context.vars = {
     "name": name,
-    "uikit_file": "$relativeRoot/lib/uikit${type == "base" ?  '/base' : ''}/$groupName/${name.snakeCase}.dart",
-    "uikit_import": "package:beautyverse/uikit${type == "base" ?  '/base' : ''}/$groupName/${name.snakeCase}.dart",
-    "test_file": "$relativeRoot/test/widgets/uikit${type == "base" ?  '/base' : ''}/$groupName/${name.snakeCase}_test.dart",
+    "uikit_file": "$relativeRoot/lib/uikit${type == "Base" ?  '/base' : ''}/$groupName/${name.snakeCase}.dart",
+    "uikit_import": "package:beautyverse/uikit${type == "Base" ?  '/base' : ''}/$groupName/${name.snakeCase}.dart",
+    "test_file": "$relativeRoot/test/widgets/uikit${type == "Base" ?  '/base' : ''}/$groupName/${name.snakeCase}_test.dart",
   };
 }
