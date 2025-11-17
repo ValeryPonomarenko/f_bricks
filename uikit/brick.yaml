@@ -26,11 +26,11 @@ vars:
     description: root folder path to project where main pubspec.yaml is located
     prompt: "ABSOLUTE path to project's root directory: "
 
-  feature_name:
+  group_name:
     type: string
-    description: Feature name?
+    description: Group name of ui component?
     default: Common
-    prompt: feature name of ui component - calendar, button, etc.
+    prompt: button, calendar, chat.
 
   name:
     type: string
@@ -42,7 +42,6 @@ vars:
     type: enum
     description: Type of the ui component
     values:
-      - Completes
-      - Templates
-      - Primitives
+      - Complete
+      - Base
     prompt: Select the type of the component
