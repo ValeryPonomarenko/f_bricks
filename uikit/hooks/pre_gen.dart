@@ -19,7 +19,7 @@ void run(HookContext context) {
       ? ""
       : "Base";
       
-  final name = "Kit${groupName.pascalCase}$componentName$Type";
+  final name = "Kit${groupName.pascalCase}$componentName$type";
 
   final relativeRoot = relativeRootDir(rootDir);
 
